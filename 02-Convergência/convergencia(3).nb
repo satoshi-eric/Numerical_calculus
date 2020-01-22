@@ -1,0 +1,200 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      6336,        190]
+NotebookOptionsPosition[      5135,        160]
+NotebookOutlinePosition[      5508,        176]
+CellTagsIndexPosition[      5465,        173]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"f", "[", "x_", "]"}], ":=", 
+   RowBox[{"Sin", "[", "x", "]"}]}], "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.775257219476742*^9, 3.7752572286396832`*^9}},
+ CellLabel->"In[71]:=",ExpressionUUID->"5049bcee-2edb-415e-9da3-974c553ccee4"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"np", "=", "4"}], ";", 
+  RowBox[{"ni", "=", 
+   RowBox[{"np", "-", "1"}]}], ";", 
+  RowBox[{"dx", "=", 
+   RowBox[{"2", 
+    RowBox[{"Pi", "/", "ni"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.7752572384666214`*^9, 3.775257279219734*^9}},
+ CellLabel->"In[72]:=",ExpressionUUID->"126bffbf-5943-4929-b546-bd83f11ef4e3"],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{"2", " ", "\[Pi]"}], "3"]], "Output",
+ CellChangeTimes->{{3.775257279584794*^9, 3.775257291482792*^9}},
+ CellLabel->"Out[72]=",ExpressionUUID->"b2f05289-a503-45f2-854f-3acf80cb68b2"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"xv", " ", "=", " ", 
+  RowBox[{"Table", "[", 
+   RowBox[{"i", ",", 
+    RowBox[{"{", 
+     RowBox[{"i", ",", "0", ",", 
+      RowBox[{"2", "Pi"}], ",", "dx"}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.7752572985350604`*^9, 3.775257318267021*^9}},
+ CellLabel->"In[73]:=",ExpressionUUID->"32e3d1ff-0a96-4d85-a26c-87a309155353"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"0", ",", 
+   FractionBox[
+    RowBox[{"2", " ", "\[Pi]"}], "3"], ",", 
+   FractionBox[
+    RowBox[{"4", " ", "\[Pi]"}], "3"], ",", 
+   RowBox[{"2", " ", "\[Pi]"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.7752573198864765`*^9},
+ CellLabel->"Out[73]=",ExpressionUUID->"e8b45334-ac06-43ea-abf5-da347e64b2f8"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"fxv", "=", 
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"xv", "[", 
+       RowBox[{"[", "i", "]"}], "]"}], ",", 
+      RowBox[{"f", "[", 
+       RowBox[{"xv", "[", 
+        RowBox[{"[", "i", "]"}], "]"}], "]"}]}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"i", ",", "1", ",", "np"}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.775257970971203*^9, 3.775257999852338*^9}, {
+  3.7752580299246035`*^9, 3.7752581088390417`*^9}, {3.775258141180168*^9, 
+  3.7752581416343737`*^9}},ExpressionUUID->"2341e366-59ff-49cc-b479-\
+8af3cb40c779"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"2", " ", "\[Pi]"}], ",", 
+    SqrtBox[
+     RowBox[{"2", " ", "\[Pi]"}]]}], "}"}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.7752577020086875`*^9, 3.775258000472327*^9, {3.775258031315946*^9, 
+   3.775258109488245*^9}},
+ CellLabel->
+  "Out[124]=",ExpressionUUID->"32a432c2-b103-44af-b0a7-3e4b84146ab8"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ListPlot", "[", "fxv", "]"}]], "Input",
+ CellChangeTimes->{{3.7752578992880154`*^9, 3.7752579061193323`*^9}},
+ CellLabel->
+  "In[115]:=",ExpressionUUID->"6bbbf5f4-cb05-4a40-a7a2-0f65150385b0"],
+
+Cell[BoxData[
+ GraphicsBox[{{}, {
+    {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.012833333333333334`],
+      AbsoluteThickness[1.6], 
+     PointBox[{{0., 0.}, {2.0943951023931957`, 1.4472025091165353`}, {
+      4.188790204786391, 2.046653415892977}, {6.283185307179586, 
+      2.5066282746310007`}}]}, {
+     {RGBColor[0.368417, 0.506779, 0.709798], PointSize[
+      0.012833333333333334`], AbsoluteThickness[1.6]}, {}}, {
+     {RGBColor[0.368417, 0.506779, 0.709798], PointSize[
+      0.012833333333333334`], AbsoluteThickness[1.6]}, {}}}, {{}, {}}},
+  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
+  Axes->{True, True},
+  AxesLabel->{None, None},
+  AxesOrigin->{0, 0},
+  DisplayFunction->Identity,
+  Frame->{{False, False}, {False, False}},
+  FrameLabel->{{None, None}, {None, None}},
+  FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
+  GridLines->{None, None},
+  GridLinesStyle->Directive[
+    GrayLevel[0.5, 0.4]],
+  Method->{
+   "OptimizePlotMarkers" -> True, 
+    "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
+        (Identity[#]& )[
+         Part[#, 1]], 
+        (Identity[#]& )[
+         Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+        (Identity[#]& )[
+         Part[#, 1]], 
+        (Identity[#]& )[
+         Part[#, 2]]}& )}},
+  PlotRange->{{0, 6.283185307179586}, {0, 2.5066282746310007`}},
+  PlotRangeClipping->True,
+  PlotRangePadding->{{
+     Scaled[0.02], 
+     Scaled[0.02]}, {
+     Scaled[0.02], 
+     Scaled[0.05]}},
+  Ticks->{Automatic, Automatic}]], "Output",
+ CellChangeTimes->{3.775257906821414*^9},
+ CellLabel->
+  "Out[115]=",ExpressionUUID->"246f123e-4ce2-4c74-838b-352db06dc19d"]
+}, Open  ]]
+},
+WindowSize->{1474, 821},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+Magnification:>1.4 Inherited,
+FrontEndVersion->"12.0 for Microsoft Windows (64-bit) (April 8, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 294, 6, 92, "Input",ExpressionUUID->"5049bcee-2edb-415e-9da3-974c553ccee4"],
+Cell[CellGroupData[{
+Cell[877, 30, 349, 9, 61, "Input",ExpressionUUID->"126bffbf-5943-4929-b546-bd83f11ef4e3"],
+Cell[1229, 41, 220, 4, 64, "Output",ExpressionUUID->"b2f05289-a503-45f2-854f-3acf80cb68b2"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1486, 50, 358, 8, 61, "Input",ExpressionUUID->"32e3d1ff-0a96-4d85-a26c-87a309155353"],
+Cell[1847, 60, 346, 9, 64, "Output",ExpressionUUID->"e8b45334-ac06-43ea-abf5-da347e64b2f8"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2230, 74, 603, 16, 61, "Input",ExpressionUUID->"2341e366-59ff-49cc-b479-8af3cb40c779"],
+Cell[2836, 92, 372, 11, 53, "Output",ExpressionUUID->"32a432c2-b103-44af-b0a7-3e4b84146ab8"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3245, 108, 216, 4, 61, "Input",ExpressionUUID->"6bbbf5f4-cb05-4a40-a7a2-0f65150385b0"],
+Cell[3464, 114, 1655, 43, 341, "Output",ExpressionUUID->"246f123e-4ce2-4c74-838b-352db06dc19d"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+

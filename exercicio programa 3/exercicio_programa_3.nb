@@ -1,0 +1,74 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      2295,         66]
+NotebookOptionsPosition[      1816,         51]
+NotebookOutlinePosition[      2159,         66]
+CellTagsIndexPosition[      2116,         63]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"fxy", " ", "=", " ", 
+     RowBox[{
+     "Import", "[", 
+      "\"\<C:\\\\Users\\\\satos\\\\Downloads\\\\unicamp\\\\calculo numerico\\\
+\\exercicio programa 3\\\\fxy.dat\>\"", "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{"ListPlot3D", "[", 
+    RowBox[{"fxy", ",", " ", 
+     RowBox[{"PlotRange", "\[Rule]", 
+      RowBox[{"\[Rule]", "All"}]}], ",", " ", 
+     RowBox[{"Mesh", "\[Rule]", " ", "8"}], ",", " ", 
+     RowBox[{"ColorFunction", "\[Rule]", 
+      RowBox[{"\[Rule]", "Hue"}]}]}], "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.7807342229878397`*^9, 3.780734241519275*^9}, {
+  3.780734287272623*^9, 3.780734308185241*^9}, {3.7807374141756873`*^9, 
+  3.7807375318749256`*^9}, {3.780737577100966*^9, 3.7807375853359413`*^9}},
+ EmphasizeSyntaxErrors->True,
+ CellLabel->"In[8]:=",ExpressionUUID->"fbbb6ed8-982c-4b89-830e-768547b07777"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.780737548544387*^9, 3.780737550686612*^9}},
+ NumberMarks->False,ExpressionUUID->"4c3695c1-538e-4e58-8cf2-6ed0d349ad8a"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.7807375549881077`*^9, 
+  3.780737555374076*^9}},ExpressionUUID->"85468b04-b5f1-469a-a33f-\
+3fc773ab8ae6"]
+},
+WindowSize->{1474, 821},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+FrontEndVersion->"12.0 for Microsoft Windows (64-bit) (April 8, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 926, 20, 101, "Input",ExpressionUUID->"fbbb6ed8-982c-4b89-830e-768547b07777"],
+Cell[1487, 42, 168, 2, 28, "Input",ExpressionUUID->"4c3695c1-538e-4e58-8cf2-6ed0d349ad8a"],
+Cell[1658, 46, 154, 3, 28, "Input",ExpressionUUID->"85468b04-b5f1-469a-a33f-3fc773ab8ae6"]
+}
+]
+*)
+
